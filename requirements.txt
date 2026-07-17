@@ -31,3 +31,4 @@ transformers
 accelerate
 sentence-transformers
 huggingface-hub
+shap
