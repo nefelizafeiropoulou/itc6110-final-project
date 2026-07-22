@@ -1,0 +1,7 @@
+# Ignore everything by default.
+*
+
+# Keep only the files intended for the repository.
+!.gitignore
+!ITC6110-Project-Spring-2026.ipynb
+!requirements.txt
