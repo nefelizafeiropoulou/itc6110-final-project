@@ -32,3 +32,7 @@ accelerate
 sentence-transformers
 huggingface-hub
 shap
+
+# Streamlit and related
+streamlit
+accelerate
