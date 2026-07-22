@@ -1,0 +1,225 @@
+Module         ITC 6110 - Natural Language Processing (NLP)
+
+
+
+Term           Spring Semester 2026
+
+
+Assessment     Group Project
+               Weight: 50%
+Duration       You can use the duration of the Term to complete the
+               project
+Deliverables
+                 1. Report (document) submitted via Turnitin
+
+                 2. Code on Blackboard or GitHub
+
+                 3. An oral presentation of your work
+
+Method of      Turnitin, Blackboard, GitHub
+Submission
+Deadline       13th Week
+               US Grading scale
+
+
+
+
+                                  1
+General Instructions
+Your project involves generating a series of experiments, extracting findings and observations
+from your experiments, and drawing conclusions. Essentially you will need to collect data
+and use Python as the programming language along with any appropriate libraries to process
+the data, generate graphs, implement models, and test results. Tables, diagrams, and data
+visualizations are essential for presenting your findings.
+    Deliverables:
+
+   • Python code submitted on Blackboard or uploaded on GitHub, along with any optional
+     instructions for running it
+
+   • a report of 5,000±500 words that will present your findings, which will be submitted
+     via TurnitIn. The report must be self-contained: all experiments performed along with
+     all conclusions drawn should be reported. If you need to exceed the word limit, use an
+     appendix.
+
+   • an oral presentation, where all members of the team need to present.
+
+   There is zero tolerance on plagiarism, and LLMs like ChatGPT, Gemini, etc. are NOT
+   allowed for the solutions and report.
+
+   Team size: 2-4 people (sent to the instructor by email before Week 6)
+
+
+Grading
+   The Grading will be uniform for all team members, based on the following breakdown.
+
+
+
+Project guidelines
+The objective of this project is to illustrate the practical usage of a range of techniques
+throughout the NLP pipeline. This project provides hands-on experience in NLP, covering
+all the various stages from data preprocessing to model development and testing. It also
+offers opportunities for further exploration and enhancement across various techniques (from
+simplistic to advanced). Your solutions should adhere to the following steps and guidelines
+in order to be marked. Grading will also be relevant to the effort, level of difficulty and
+advancements made in each step of the process. All steps outlined are mandatory unless
+explicitly stated as optional or extra.
+
+
+
+
+                                              2
+Contents
+1 Data Collection (10%)                                                                       3
+
+2 Data Preprocessing and Normalization (10%)                                                  3
+
+3 Feature Engineering (Embeddings) & Text Visualization (15%)                                 4
+
+4 Model Building (40%)                                                                        4
+  4.1 Unsupervised Learning (10%) . . . . . . . . . . . . . . . . . . . . . . . . . .         4
+  4.2 Supervised Learning (30%) . . . . . . . . . . . . . . . . . . . . . . . . . . . .       5
+
+5 Report quality (15%)                                                                        5
+
+6 Presentation (10%)                                                                          6
+
+
+1     Data Collection (10%)
+Gather a dataset tailored to meet the requirements of the group project. The dataset needs
+to be able to address the model building exercises outlined below in Step 4.
+
+    • The dataset can originate from any public or private source*, and can feature any type
+      of textual data (for example, it can cover movie reviews, ratings, news, articles, among
+      others). You will need to describe your data in your report and presentation.
+
+    • The data should be in English. If the raw data contain other or multiple languages,
+      extra pre-processing & data handling steps may need to be performed.
+
+    • The dataset needs to be labelled to conduct supervised learning tasks, specifically clas-
+      sification (such as sentiment analysis or topic classification; sentiment analysis is con-
+      sidered a subset of topic classification).
+
+    • You may need to experiment with and adjust, if needed, the size of your data, while
+      maintaining adequate historicity and diversity, to ensure it will run smoothly on your
+      machines without any problems. Any adjustments must be explained in your report.
+
+   *If the dataset originates from a private source, you need to get the nescecary
+permission from the owner of the data. Also, for all datasets, you need to comply
+with the utlized libraries and LLMs’ terms of use.
+
+
+2     Data Preprocessing and Normalization (10%)
+    • As with any other ML pipeline, deal with missing and duplicate values, inconsistencies,
+      input errors, text formats, outliers, etc.
+
+
+
+
+                                               3
+    • Normalize your input text data. Apply, where appropriate, the removal of stop words,
+      punctuation, and special characters. Use regular expressions (RegEx) or other tech-
+      niques for removal of consecutive letters, short words, etc. If in existence, handle
+      appropriately any URLs, HTML tags, emojis, emoticons, usernames, etc. If the data
+      contain personal, PII or sensitive information, it also needs to be removed, handled or
+      anonymized. Experiment with and decide upon using (or not) stemming or lemmati-
+      zation. Finally, apply tokenization prior to converting the data into numerical format
+      for the next step.
+    • Justify all your pre-processing steps in the report, code and presentation.
+
+
+3     Feature Engineering (Embeddings) & Text Visual-
+      ization (15%)
+    • Extract features from the text data: this step involves converting the text data into
+      numeric format. This can be achieved using various techniques like Bag of Words,
+      TF-IDF, or word embeddings (Word2Vec, GloVe), Deep Learning techniques (e.g.
+      Transformers) and more. Justify your choice of embedding(s) in your report and pre-
+      sentation. (Optional) experiment also with N-grams.
+    • Build a solution where you provide a word from your corpus that returns the N most
+      similar words (5-10 words will suffice). There are multiple solutions and techniques to
+      address this.
+    • Visualize the text embeddings in a scatterplot using techniques such as t-SNE (pre-
+      ferrable) and/or PCA. Colour the findings appropriately or add supporting text infor-
+      mation or labels in the plots to detect any groups/clusters, patterns, trends, similarities,
+      etc.
+    • (Extra points/Optional) Ideally, compare multiple embedding techniques; discuss their
+      results, overall performance, similarities, dissimilarities, advantages and disadvantages.
+    • (Extra points/Optional) Feel free to use any other static or interactive visualization
+      techniques of your choice to depict and discuss your data and findings (e.g. word
+      frequencies).
+
+
+4     Model Building (40%)
+4.1     Unsupervised Learning (10%)
+    • Topic modelling: Apply (unsupervised learning) topic modelling using at least one
+      algorithm of your choice to identify topic clusters, groups with similar words and
+      hidden semantic patterns within the body of your text.
+    • Create supporting visualizations, extract key words per cluster (in a tabular format or
+      visualization), and discuss your findings.
+
+                                                4
+    • Ideally, you can perform a comparison between various Unsupervised Learning (e.g.
+      Multidimensional Scaling, Latent Dirichlet Allocation, etc.) techniques and discuss the
+      results.
+
+4.2    Supervised Learning (30%)
+    • Task 1 (10%): Text classification (topic classification or sentiment analysis):
+         – Conduct text classification (the label can be a topic such as spam / ham or
+           drama / comedy or sentiment such as positive / negative) using at least (a) one
+           traditional ML technique and (b) one DL model (can be a custom solution, a
+           pre-trained model with transfer learning, etc.). Compare the models and discuss
+           the results.
+         – Apply XAI (Explainable AI) techniques (e.g., LIME, SHAP) to explain your
+           findings for one of your classification models on either a local or global basis.
+    • Task 2 (10%): Retrieval-Augmented Generation (RAG) for Conversational AI
+         – Adapt the dataset used in Task 1 for retrieval-based question-answering.
+         – Implement a document retriever using vector embeddings (e.g., Word2Vec, Hug-
+           ging Face Embeddings)
+         – Implement appropriate prompt engineering for the RAG system.
+         – Use a pre-trained LLM for response generation.
+         – Evaluate the performance of the RAG system.
+    • Task 3 (10%): UI Development with Streamlit & Deployment on Hugging Face
+         – Develop an interactive user interface using Streamlit, Gradio or another UI library
+           to allow users to input queries and receive responses from the RAG-based chatbot.
+         – Deploy the model as an online application using Hugging Face Spaces or another
+           cloud-based service.
+         – Add appropriate UI elements to the application to allow users to interact with
+           the RAG system.
+         – Evaluate the user experience and model response quality, and discuss potential
+           improvements.
+
+
+5     Report quality (15%)
+Document the entire project, including the dataset used, the challenges faced, preprocessing
+techniques investigated, model architecture, training process, deployment steps and perfor-
+mance metrics.
+   The quality of report is based on many factors including: organization of the material,
+presentation of data, experiments, models, evaluation, drawing conclusion using various aids
+such as tables, diagrams, equations etc., and references to external sources and publications.
+Finally, discuss potential avenues for future work.
+
+                                               5
+6    Presentation (10%)
+Prepare a presentation to showcase the project and its outcomes. During the presentation
+each group will present their work in a comprehensive manner and will be called to answer
+questions regarding their work. Every member in the team has to present a part of the
+analysis and findings.
+
+
+Grading scale: US System
+
+                                         GP       Letter    US
+                          Excellent      4.00       A      95-100
+                          Very good      3.70      A-      90-94
+                          Very good      3.50      B+      86-89
+                          Good           3.00       B      80-85
+                          Satisfactory   2.50      C+      76-79
+                          Satisfactory   2.00       C      70-75
+                          Fail            0         F       <70
+
+                                 Table 1: Grading System
+
+
+
+
+                                              6
+
