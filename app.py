@@ -3,7 +3,6 @@
 The application uses local Hugging Face models and requires no API key. Its
 retriever, prompt and generator mirror the supervised-learning notebook.
 """
-
 from pathlib import Path
 import time
 
